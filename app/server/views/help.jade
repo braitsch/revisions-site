@@ -1,0 +1,55 @@
+
+extends layout
+
+block content
+	#help
+		h2
+			u Troubleshooting
+			div
+				| The following is a list of frequently asked questions to help you navigate the app. If you are looking for a list of known issues, 
+				a(href='/issues') go here.
+				div
+				ul
+					li.q 
+						| What is Revisions and why should I care?
+					li.a 
+						| Revisions is a Git client built in 
+						a(href='http://get.adobe.com/air', target='_blank') Adobe Air
+						|  that aims to provide a safe, easy and user-friendly introduction to version control and remote file syncing for both the Mac and Windows platform.
+					li.q
+						| I already have Git installed, will this affect or overwrite my existing instance of Git?
+					li.a
+						| No. Revisions contains it's own custom baked Git binary and does not communicate with any libraries on your machine.
+					li.q What happens if I add an existing Git repository to Revisions?
+					li.a
+						| Whenever you add a folder to Revisions, the app will check if it is already a repository and use any existing .git files it finds.<br>If the folder is not already initialized, Revisions will create a new repository with a first saved version called "Bookmark Created".
+					li.q What happens to my repository data when I delete a bookmark from Revisions?
+					li.a
+						| Nothing. All your repository data is left intact, unless of course you check the option to "destroy history" when removing the bookmark.
+					li.q What hosting services do you support?
+					li.a
+						| Currently we support 
+						a(href='http://github.com/') GitHub
+						|  & 
+						a(href='http://beanstalkapp.com/') Beanstalk
+						|  although we plan to add support for other providers after launch.
+					li.q Does Revisions support branching?
+					li.a
+						| Yes. We will have a video on the site soon demonstrating how it works.<br>You can create a branch based on any saved version simply by clicking on the version in the History View.<br>Switching and syncing branches is as easy as selecting them from the menu that then appears.
+					li.q When will the Windows version be available?
+					li.a
+						| Soon, my friends soon. Help us test & stabilize the Mac build and the Windows version will be quickly on it's way.
+					li.q What happened to support for Linux?
+					li.a
+						| Unfortunately because Adobe has stopped developing Air for Linux as of version 2.6, we have been forced to abandon our Linux version as we continue to improve Revisions.
+					li.q
+						| I found a bug, have a problem, am generally unhappy or have other woes, how do I contact you?
+					li.a
+						a(href='mailto:stephen@braitsch.io') stephen@braitsch.io
+					li.q How do I uninstall Revisions?
+					li.a
+						| Until we get around to writing an actual uninstaller, just delete the following files from your computer:
+						ol.sub-list
+							li The Application inside your ~/Applications folder
+							li The folder located at ~/Library/Preferences/com.braitsch.revisions
+							li The file located at ~/Library/Preferences/com.braitsch.revisions.plist

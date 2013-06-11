@@ -1,0 +1,78 @@
+
+extends layout
+
+block content
+	#container
+		h2 Simple, Powerful File Versioning & Sharing.
+		#main
+		#video-embed
+			iframe(src='http://player.vimeo.com/video/26176531?title=0&byline=0&portrait=0&color=ffffff', width='660', height='408', frameborder='0')
+		// begin signup form
+		#signup
+			form(action='', method='post')
+			h1 Coming Soon!
+			p
+				| We're currently in private beta.
+				br
+				| Drop us your name & email and we'll send you a link as soon as we're ready.
+				.indicates-required
+				span.asterisk2 *
+				| indicates required
+			.form-input
+				label#a1
+				span.asterisk *
+				input#mce-FNAME.required(type='text', name='FNAME', onfocus='if (this.value == \'Your Name\') {this.value = \'\';}', onblur='if (this.value == \'\') {this.value = \'Your Name\';}', value='Your Name')
+			.form-input
+				label#a2
+				span.asterisk *
+				input#mce-EMAIL.required.email(type='email', name='EMAIL', onfocus='if (this.value == \'Your Email\') {this.value = \'\';}', onblur='if (this.value == \'\') {this.value = \'Your Email\';}', value='Your Email')
+			#checks
+				p
+				strong Which platforms are you interested in?
+				.check
+					input(type='checkbox', value='MacOS')
+					label MacOSX
+				.check
+					input(type='checkbox', value='Windows')
+					label Windows
+			div
+				input#submit.button(type='submit', value='Signup', name='submit')
+		// end signup form
+		.image_carousel
+			#foo2
+				img#1(src='./index/carousel-img/revisions-a-quick-intro.jpg', alt='revisions-a-quick-intro')
+				img#2(src='./index/carousel-img/working-with-files.jpg', alt='working-with-files')
+				img#3(src='./index/carousel-img/working-with-folders.jpg', alt='working-with-folders')
+				img#4(src='./index/carousel-img/keeping-your-team-in-sync.jpg', alt='keeping-your-team-in-sync')
+				img#5(src='./index/carousel-img/sharing-with-beanstalk.jpg', alt='sharing-with-beanstalk')
+				img#6(src='./index/carousel-img/sharing-with-github.jpg', alt='sharing-with-github')
+			.clearfix
+				a#foo2_prev.prev(href='#')
+					span prev
+				a#foo2_next.next(href='#')
+					span next
+		#details
+			| Revisions is a simple and easy way to track & share versions of your files as you create them.
+			br
+			| The idea is simple. You add files you are working on to Revisions and the app keeps track of how they change over time.
+			br
+			| Then at any point if you want to see what your file looked like in an earlier state you can simply save a copy of any previous version with the click of a button.
+			br
+			| No more folders of my-file-v2, my-file-v3, my-file-v4, etc!!
+			p
+			| Revisions runs on top of 
+			a(href='http://get.adobe.com/air', target='_blank') Adobe Air
+			| , leverages the open source 
+			a(href='http://git-scm.com/', target='_blank') Git
+			|  library under the hood and seamlessly integrates with your existing 
+			a(href='https://github.com/', target='_blank') Github
+			|  &
+			a(href='http://beanstalkapp.com/', target='_blank')  Beanstalk
+			|  accounts.
+			p.coming-soon
+			b Coming soon for Mac & Windows
+block scripts
+	script(src='vendor/jquery.min.js')
+	script(src='vendor/jquery.carouFredSel-5.0.7.js')
+	script(src='index/index.js')
+	script(src='index/submit-form.js')

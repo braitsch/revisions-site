@@ -1,0 +1,23 @@
+
+extends layout
+
+block content
+
+	#issues
+		h2
+			u Known Issues
+			div
+			| The following is a list of known issues that we are currently working on. If you are looking for a list of frequently asked questions, 
+			a(href='/help') go here.
+			ul
+				li.i
+					| Tracking individual files stops working if the name of the file changes. However you can safely move the file and the app will prompt you to relink it.
+				li.i
+					| Sync operations will fail without warning if the remote branch or repository you are attempting to sync with no longer exists.
+				li.i
+					| Cloning over an existing repository creates problems.
+					u Don't do it.
+				li.i
+					| Syncing a bookmark with multiple online accounts is supported however there is not yet a way to select which account to sync with.<br>If more than one remote account is associated with a bookmark, Revisions will sync with the first one you added.
+				li.i
+					| Adding bookmarks to Beanstalk with non-alphanumeric characters in the name can cause problems.
