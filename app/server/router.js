@@ -9,6 +9,10 @@ module.exports = function(app) {
 		res.render('beta');
 	});
 	
+	app.get('/download', function(req, res){
+		res.send(200);
+	});
+	
 	app.get('/help', function(req, res){
 		res.render('help');
 	});
