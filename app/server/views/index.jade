@@ -7,37 +7,15 @@ block content
 		#main
 		#video-embed
 			iframe(src='http://player.vimeo.com/video/26176531?title=0&byline=0&portrait=0&color=ffffff', width='660', height='408', frameborder='0')
-		// begin signup form
 		#signup
-			form(action='', method='post')
-			h1 Coming Soon!
+			h1 Now Available!
 			p
-				| We're currently in private beta.
+				| Revisions is now available to the public however is still very much beta software.
 				br
-				| Drop us your name & email and we'll send you a link as soon as we're ready.
-				.indicates-required
-				span.asterisk2 *
-				| indicates required
-			.form-input
-				label#a1
-				span.asterisk *
-				input#mce-FNAME.required(type='text', name='FNAME', onfocus='if (this.value == \'Your Name\') {this.value = \'\';}', onblur='if (this.value == \'\') {this.value = \'Your Name\';}', value='Your Name')
-			.form-input
-				label#a2
-				span.asterisk *
-				input#mce-EMAIL.required.email(type='email', name='EMAIL', onfocus='if (this.value == \'Your Email\') {this.value = \'\';}', onblur='if (this.value == \'\') {this.value = \'Your Email\';}', value='Your Email')
-			#checks
-				p
-				strong Which platforms are you interested in?
-				.check
-					input(type='checkbox', value='MacOS')
-					label MacOSX
-				.check
-					input(type='checkbox', value='Windows')
-					label Windows
+				| That is there are probably bugs and other anomolies so if you discover any problems 
+				a(href='mailto:stephen@quietless.com') please let me know.
 			div
-				input#submit.button(type='submit', value='Signup', name='submit')
-		// end signup form
+				input.button(type='button', value='Download', onclick="location.href='/beta/Revisions-0.5.81.dmg'")
 		.image_carousel
 			#foo2
 				img#1(src='./index/carousel-img/revisions-a-quick-intro.jpg', alt='revisions-a-quick-intro')
@@ -69,8 +47,6 @@ block content
 			|  &
 			a(href='http://beanstalkapp.com/', target='_blank')  Beanstalk
 			|  accounts.
-			p.coming-soon
-			b Coming soon for Mac & Windows
 block scripts
 	script(src='vendor/jquery.min.js')
 	script(src='vendor/jquery.carouFredSel-5.0.7.js')
