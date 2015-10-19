@@ -1,18 +1,21 @@
 {
-	"name": "braitsch.io",
+	"name": "revisions.braitsch.io",
 	"version": "1.0.0",
-	"description": "http://braitsch.io",
-	"author": {
-		"name": "Stephen Braitsch",
-		"email": "stephen@braitsch.io"
+	"description": "A cross platform Git client for designers built in Adobe Air",
+	"author": "Stephen Braitsch <stephen@braitsch.io>",
+	"website":{
+		"url": "http://revisions.braitsch.io"
 	},
-	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:braitsch/revisions-site.git"
+	},
 	"dependencies": {
-		"express": "3.0.6",
-		"stylus": "0.50.0",
-		"jade": "1.9.2"
+		"express": "4.13.3",
+		"jade": "1.11.0",
+		"stylus": "0.52.4"
 	},
 	"engines": {
-		"node": "0.10.29"
+		"node": "4.2.1"
 	}
 }
