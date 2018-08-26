@@ -12,9 +12,5 @@ module.exports = function(app) {
 	app.get('/issues', function(req, res){
 		res.render('issues');
 	});
-	
-	app.get('*', function(req, res){
-		res.render('404', { title: 'Page Not Found'})
-	});
 
 };
