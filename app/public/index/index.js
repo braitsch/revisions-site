@@ -21,12 +21,12 @@ $("#foo2").carouFredSel({
 });
 
 var u = [
-	'http://player.vimeo.com/video/26176531?title=0&amp;byline=0&amp;portrait=0',
-	'http://player.vimeo.com/video/30923487?title=0&amp;byline=0&amp;portrait=0',
-	'http://player.vimeo.com/video/30932404?title=0&amp;byline=0&amp;portrait=0',
-	'http://player.vimeo.com/video/31157195?title=0&amp;byline=0&amp;portrait=0',
-	'http://player.vimeo.com/video/31175965?title=0&amp;byline=0&amp;portrait=0',
-	'http://player.vimeo.com/video/31168980?title=0&amp;byline=0&amp;portrait=0'
+	'https://player.vimeo.com/video/26176531?title=0&amp;byline=0&amp;portrait=0',
+	'https://player.vimeo.com/video/30923487?title=0&amp;byline=0&amp;portrait=0',
+	'https://player.vimeo.com/video/30932404?title=0&amp;byline=0&amp;portrait=0',
+	'https://player.vimeo.com/video/31157195?title=0&amp;byline=0&amp;portrait=0',
+	'https://player.vimeo.com/video/31175965?title=0&amp;byline=0&amp;portrait=0',
+	'https://player.vimeo.com/video/31168980?title=0&amp;byline=0&amp;portrait=0'
 ]
 
 $('#foo2 img').click(function(e) {
